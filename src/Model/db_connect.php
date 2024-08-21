@@ -1,15 +1,13 @@
 <?php
 
-$servername = "localhost";
-$username = "root"; // Your MySQL username
-$password = ""; // Your MySQL password
-$database = "airhairmysqlaug24";
+require_once '../../config/config.php';
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $database);
-
+$conn = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
+}
+else{
+    echo "Connected successfully";
 }
 ?>

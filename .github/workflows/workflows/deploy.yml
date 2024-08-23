@@ -18,4 +18,4 @@ jobs:
 
       - name: Deploy to Azure Web App
         run: |
-          az webapp up --name YOUR_WEBAPP_NAME --resource-group YOUR_RESOURCE_GROUP --location YOUR_LOCATION
+          az webapp up --name airHairPHP --resource-group emma_rg_7640 --location East US

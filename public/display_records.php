@@ -51,6 +51,7 @@ $result = $conn->query($sql);
         </thead>
         <tbody>
             <?php
+            echo "here is a table";
             if ($result->num_rows > 0) {
                 // Output data of each row
                 echo "number of records: " . $result->num_rows;
